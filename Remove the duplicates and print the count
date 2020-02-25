@@ -1,0 +1,20 @@
+ # code 1
+ 
+ a = [2,3,4,5,3,2,4,5]
+ my_dict = {i:a.count(i) for i in a}
+ print(my_dict)
+ 
+ # code 2
+ 
+ from collections import Counter
+ i = dict(Counter(a))
+ print(i)
+
+ #code 3
+ 
+ a = [2,3,4,5,3,2,4,5]
+ b=set(a)
+ result={}
+ for i in b:
+     result[i]=a.count(i)
+ print(result)
